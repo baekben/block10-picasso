@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Picasso</title>
+		<link rel="stylesheet" href="external.css" />
+	</head>
+	<body>
+		<h1 id="artName">"Picasso"</h1>
+		<p>Quantity: 1</p>
+		<div class="artContainer">
+			<div class="blocks">
+				<div class="smallBlocks"></div>
+				<div class="smallBlocks"></div>
+				<div class="smallBlocks"></div>
+			</div>
+			<p id="circleOne" class="circleElm"></p>
+			<p id="circleTwo" class="circleElm"></p>
+			<p id="circleThree" class="circleElm"></p>
+			<div class="bigBlock">
+				<div class="block-med"></div>
+			</div>
+			<p id="triangleOne"></p>
+		</div>
+		<div class="formContainer">
+			<h2>Purchase Interest</h2>
+			<p>Fill out if you are intested in purchasing</p>
+			<span class="requiredPart">*</span> Required
+			<form
+				method="POST"
+				action="/block10-picasso/formsubmitted.html"
+				style="line-height: 2"
+			>
+				<label for="name">First Name <span class="requiredPart">*</span></label
+				><br />
+				<input type="text" name="name" id="name" required /><br />
+				<label for="lastName">Last Name</label><br />
+				<input type="text" name="lastName" id="lastName" /><br />
+				<label for="email">Email <span class="requiredPart">*</span></label
+				><br />
+				<input type="email" name="email" id="email" required /><br />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+		<footer>
+			<p>Brought to you by The Museum</p>
+		</footer>
+	</body>
+</html>
